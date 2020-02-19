@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>My weather client</Description>
+  </PropertyGroup>
+
+  <Target Name="Inspect" AfterTargets="Build">
+    <Message Text="@(PackageReference)" Importance="high" />
+  </Target>
+
+</Project>
